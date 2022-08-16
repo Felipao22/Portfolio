@@ -28,7 +28,7 @@ export default function Portfolio() {
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             Portfolio
           </p>
-          <p className="py-6">Check out some of my work here </p>
+          <p className="py-6">Check out some of my work here.</p>
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
@@ -42,12 +42,16 @@ export default function Portfolio() {
               <div className="flex items-center justify-center">
                 <a
                   href={href2}
+                  target="_blank"
+                  rel="noreferrer"
                   className="w1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
                 >
                   Demo
                 </a>
                 <a
                   href={href}
+                  target="_blank"
+                  rel="noreferrer"
                   className="w1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
                 >
                   Code

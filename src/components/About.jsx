@@ -13,23 +13,21 @@ export default function About() {
           </p>
         </div>
         <p className="text-xl mt-20">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          Who am I?🙋‍♂️
+          <br />
+          Full Stack Developer with an inclination towards the Front-End.
+          Proficient in various platforms, languages, and embedded systems.
+          Individual and team projects completed. I have the ability to carry
+          out scalable and modularizable web projects. Great aptitude for
+          teamwork.
         </p>
         <br />
         <p className="text-xl">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          Why me?🚀
+          <br />
+          With me you will get a curious, creative developer, with a vast
+          ability to solve problems and above all, someone always willing to
+          share and acquire knowledge.
         </p>
       </div>
     </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import HeroImage from "../assets/heroImage.png";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
-import {Link} from 'react-scroll'
+import { Link } from "react-scroll";
 
 export default function Home() {
   return (
@@ -15,13 +15,19 @@ export default function Home() {
             I'm a Full Stack Developer
           </h2>
           <p className="text-gray-500 py-4 max-w-md">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
+            I'm recently graduated in Henry Bootcamp with +800 hours of
+            programming based on practices and real projects. Currently, I love
+            to work on web application using technologies like React, Redux and
+            Node JS.
           </p>
 
           <div>
-            <Link to='portfolio' smooth duration={500} className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer">
+            <Link
+              to="portfolio"
+              smooth
+              duration={500}
+              className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
+            >
               Portfolio
               <span className="group-hover:rotate-90 duration-300">
                 <MdOutlineKeyboardArrowRight size={25} className="ml-1" />

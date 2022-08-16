@@ -6,6 +6,8 @@ import reactImage from "../assets/react.png";
 import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
 import node from "../assets/node.png";
+import redux from '../assets/redux2.png';
+import git from '../assets/git.png';
 
 export default function Experience() {
   const techs = [
@@ -51,6 +53,18 @@ export default function Experience() {
       title: "GitHub",
       style: "shadow-gray-400",
     },
+    {
+      id: 8,
+      src: redux,
+      title: "Redux",
+      style: "shadow-violet-500",
+    },
+    {
+      id: 9,
+      src: git,
+      title: "Git",
+      style: "shadow-red-600",
+    },
   ];
 
   return (
@@ -63,7 +77,7 @@ export default function Experience() {
           <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">
             Experience
           </p>
-          <p className="py-6">These are the technologies I've worked with</p>
+          <p className="py-6">These are the technologies I've worked with.</p>
         </div>
 
         <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
@@ -81,3 +95,4 @@ export default function Experience() {
     </div>
   );
 }
+
