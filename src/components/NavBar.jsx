@@ -1,48 +1,79 @@
-import React from "react";
-import HeroImage from "../assets/heroImage.png";
-import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import React, { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
 
-export default function Home() {
-  return (
-    <div
-      name="home"
-      className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800"
-    >
-      <div className="max-w-screen-lg mx-auto flex flex-col items-center h-full px-4 md:flex-row">
-        <div className="flex flex-col justify-center h-full">
-          <h2 className="text-4xl sm:text-7xl font-bold text-white">
-            I'm a Full Stack Developer
-          </h2>
-          <p className="text-gray-500 py-4 max-w-md">
-            I'm recently graduated in Henry Bootcamp with +800 hours of
-            programming based on practices and real projects. Currently, I love
-            to work on web application using technologies like React, Redux and
-            Node JS.
-          </p>
+export default function NavBar() {
+  const [nav, setNav] = useState(false);
 
-          <div>
-            <Link
-              to="portfolio"
-              smooth
-              duration={500}
-              className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
-            >
-              Portfolio
-              <span className="group-hover:rotate-90 duration-300">
-                <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
-              </span>
-            </Link>
-          </div>
-        </div>
-        <div>
-          <img
-            src={HeroImage}
-            alt="My profile"
-            className="rounded-2xl mx-auto w-2/3 md:w-full"
-          />
-        </div>
+  const links = [
+    {
+      id: 1,
+      link: "home",
+    },
+    {
+      id: 2,
+      link: "about",
+    },
+    {
+      id: 3,
+      link: "portfolio",
+    },
+    {
+      id: 4,
+      link: "experience",
+    },
+    {
+      id: 5,
+      link: "contact",
+    },
+  ];
+
+  return (
+    <div className="flex justify-between items-center w-full h-20  px-4 text-white bg-black fixed">
+      <div>
+        <h1 className="text-5xl font-signature ml-2">Felipe</h1>
       </div>
+
+      <ul className="hidden md:flex">
+        {links.map(({ id, link }) => (
+          <li
+            key={id}
+            className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200"
+          >
+            <Link to={link} smooth duration={500}>
+              {link}
+            </Link>
+          </li>
+        ))}
+      </ul>
+
+      <div
+        onClick={() => setNav(!nav)}
+        className="cursor-pointer pr-4 z-10 text-gray-500 md:hidden"
+      >
+        {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
+      </div>
+
+      {nav && (
+        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 text-gray-500">
+          {links.map(({ id, link }) => (
+            <li
+              key={id}
+              className="px-4 cursor-pointer capitalize py-6 text-4xl"
+            >
+              <Link
+                onClick={() => setNav(!nav)}
+                to={link}
+                smooth
+                duration={500}
+              >
+                {link}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 }
+
