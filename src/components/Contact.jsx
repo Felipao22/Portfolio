@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const Contact = () => {
   const [input, setInput] = useState({
@@ -6,6 +6,14 @@ const Contact = () => {
     email: "",
     message: "",
   });
+
+  useEffect(() => {
+    setInput({
+      name: "",
+      email: "",
+      message: ""
+    })
+  },[])
 
   function handleChange(e) {
     setInput({
@@ -69,6 +77,7 @@ const Contact = () => {
             ></textarea>
 
             <button
+              disabled={input.name === "" || input.email === "" || input.message === ""}
               onSubmit={(e) => handleSubmit(e)}
               className="text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300"
             >
