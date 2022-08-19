@@ -7,13 +7,13 @@ const Contact = () => {
     message: "",
   });
 
-  useEffect(() => {
-    setInput({
-      name: "",
-      email: "",
-      message: ""
-    })
-  },[])
+  // useEffect(() => {
+  //   setInput({
+  //     name: "",
+  //     email: "",
+  //     message: ""
+  //   })
+  // },[])
 
   function handleChange(e) {
     setInput({
@@ -22,14 +22,14 @@ const Contact = () => {
     });
   }
 
-  // function handleSubmit(e) {
-  //   e.preventDefault();
-  //   setInput({
-  //     name: "",
-  //     email: "",
-  //     message: {},
-  //   });
-  // }
+  function handleSubmit(e) {
+    e.preventDefault();
+    setInput({
+      name: "",
+      email: "",
+      message: '',
+    });
+  }
 
   return (
     <div
@@ -82,7 +82,7 @@ const Contact = () => {
 
             <button
               disabled={input.name === "" || input.email === "" || input.message === ""}
-              // onSubmit={(e) => handleSubmit(e)}
+              onSubmit={(e) => handleSubmit(e)}
               className="text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300"
             >
               Let's talk
