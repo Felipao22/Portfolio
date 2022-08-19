@@ -18,7 +18,7 @@ export default function Home() {
             I'm recently graduated in Henry Bootcamp with +800 hours of
             programming based on practices and real projects. Currently, I love
             to work on web application using technologies like React, Redux and
-            Node JS. 
+            Node JS.
           </p>
 
           <div>
@@ -39,7 +39,7 @@ export default function Home() {
           <img
             src={HeroImage}
             alt="My profile"
-            className="rounded-2xl mx-auto w-2/3 md:w-full"
+            className="rounded-2xl mx-auto w-2/3 md:w-full object-cover"
           />
         </div>
       </div>
