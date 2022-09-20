@@ -1,6 +1,7 @@
 import React from "react";
 import bringit from "../assets/portfolio/bringit.png";
 import countries from "../assets/portfolio/countries.png";
+import quiz from '../assets/portfolio/quizapp.png'
 
 export default function Portfolio() {
   const portfolios = [
@@ -15,6 +16,12 @@ export default function Portfolio() {
       src: countries,
       href: "https://github.com/Felipao22/PI-Countries",
       href2: "https://app-countries-one.vercel.app/",
+    },
+    {
+      id: 3,
+      src: quiz,
+      href: "https://github.com/Felipao22/QuizzApp",
+      href2: "https://vimeo.com/751504036",
     },
   ];
 

@@ -17,7 +17,7 @@ export default function Home() {
           <p className="text-gray-500 py-4 max-w-md">
             I'm recently graduated in Henry Bootcamp with +800 hours of
             programming based on practices and real projects. Currently, I love
-            to work on web application using technologies like React, Redux and
+            to work on web application using technologies like React, React Native, Redux and
             Node JS.
           </p>
 
