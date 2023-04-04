@@ -4,7 +4,7 @@ import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { BsWhatsapp } from "react-icons/bs";
 import Cv from "../assets/CVFelipeAviani.pdf";
-import Cv2 from '../assets/CVFelipeAvianiEnglish.pdf'
+import Cv2 from '../assets/ResumeFelipeAviani.pdf'
 
 export default function SocialLinks() {
   const links = [
@@ -88,7 +88,7 @@ export default function SocialLinks() {
         <a
             className="flex justify-between items-center w-full text-white"
             href={Cv2}
-            download="CV Felipe Aviani English"
+            download="Resume Felipe Aviani"
           >
             Resume English <BsFillPersonLinesFill size={30} />
           </a>

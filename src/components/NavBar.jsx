@@ -1,6 +1,12 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
+import { BsFillPersonLinesFill } from "react-icons/bs";
+import { BsWhatsapp } from "react-icons/bs";
+import Cv from "../assets/CVFelipeAviani.pdf";
+import Cv2 from '../assets/ResumeFelipeAviani.pdf'
 
 export default function NavBar() {
   const [nav, setNav] = useState(false);
@@ -25,6 +31,46 @@ export default function NavBar() {
     {
       id: 5,
       link: "contact",
+    },
+  ];
+
+  const socialLinks = [
+    {
+      id: 1,
+      child: (
+        <>
+           <FaLinkedin size={30} />
+        </>
+      ),
+      href: "https://www.linkedin.com/in/felipeaviani/",
+      style: "rounded-tr-md",
+    },
+    {
+      id: 2,
+      child: (
+        <>
+           <FaGithub size={30} />
+        </>
+      ),
+      href: "https://github.com/Felipao22",
+    },
+    {
+      id: 3,
+      child: (
+        <>
+           <HiOutlineMail size={30} />
+        </>
+      ),
+      href: "mailto:felipeaviani@gmail.com",
+    },
+    {
+      id: 4,
+      child: (
+        <>
+           <BsWhatsapp size={30} />
+        </>
+      ),
+      href: "https://api.whatsapp.com/send?phone=542664553869",
     },
   ];
 
@@ -71,6 +117,40 @@ export default function NavBar() {
               </Link>
             </li>
           ))}
+          <ul>
+
+          {socialLinks.map(({ id, child, href, style }) => (
+          <li
+            key={id}
+            className={`inline-block pl-2 pr-2 pt-8  ${" "} ${style}`}
+          >
+            <a
+              href={href}
+              className="flex justify-between items-center w-full text-white"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {child}
+            </a>
+          </li>
+        ))}
+         <a
+            className="flex justify-between items-center w-full text-white pt-2 pr-1 pl-2"
+            href={Cv}
+            download="CV Felipe Aviani"
+          >
+            <BsFillPersonLinesFill size={30}/>
+            Resume Spanish
+          </a>
+          <a
+            className="flex justify-between items-center w-full text-white pt-1 pr-2 pl-2"
+            href={Cv2}
+            download="Resume Felipe Aviani"
+          >
+             <BsFillPersonLinesFill size={30} />
+             Resume English
+          </a>
+          </ul>
         </ul>
       )}
     </div>

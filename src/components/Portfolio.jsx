@@ -2,23 +2,30 @@ import React from "react";
 import bringit from "../assets/portfolio/bringit.png";
 import countries from "../assets/portfolio/countries.png";
 import quiz from '../assets/portfolio/quizapp.png'
+import proteccion from '../assets/portfolio/proteccion.png'
 
 export default function Portfolio() {
   const portfolios = [
     {
       id: 1,
+      src: proteccion,
+      href: "https://github.com/Felipao22",
+      href2: "https://proteccionlaboral.com.ar/",
+    },
+    {
+      id: 2,
       src: bringit,
       href: "https://github.com/Felipao22/bring-it-app",
       href2: "https://bring-it-app.vercel.app/",
     },
     {
-      id: 2,
+      id: 3,
       src: countries,
       href: "https://github.com/Felipao22/PI-Countries",
       href2: "https://app-countries-one.vercel.app/",
     },
     {
-      id: 3,
+      id: 4,
       src: quiz,
       href: "https://github.com/Felipao22/QuizzApp",
       href2: "https://vimeo.com/751504036",
@@ -28,9 +35,9 @@ export default function Portfolio() {
   return (
     <div
       name="portfolio"
-      className="bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen"
+      className="bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen sm:h-screen"
     >
-      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
+      <div className="max-w-screen-lg pr-4 pl-4 pb-48 mx-auto flex flex-col justify-center w-full h-full ">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             Portfolio
@@ -53,7 +60,7 @@ export default function Portfolio() {
                   rel="noreferrer"
                   className="w1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
                 >
-                  Demo
+                  Link
                 </a>
                 <a
                   href={href}
