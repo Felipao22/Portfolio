@@ -3,6 +3,7 @@ import bringit from "../assets/portfolio/bringit.png";
 import countries from "../assets/portfolio/countries.png";
 import quiz from '../assets/portfolio/quizapp.png'
 import proteccion from '../assets/portfolio/proteccion.png'
+import jstrivia from '../assets/portfolio/js.png'
 
 export default function Portfolio() {
   const portfolios = [
@@ -26,6 +27,12 @@ export default function Portfolio() {
     },
     {
       id: 4,
+      src: jstrivia,
+      href: "https://github.com/Felipao22/Js-trivia",
+      href2: "https://js-trivia-nu.vercel.app/",
+    },
+    {
+      id: 5,
       src: quiz,
       href: "https://github.com/Felipao22/QuizzApp",
       href2: "https://vimeo.com/751504036",
