@@ -6,11 +6,12 @@ import reactImage from "../assets/react.png";
 import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
 import node from "../assets/node.png";
-import redux from '../assets/redux2.png';
-import git from '../assets/git.png';
-import reactNative from '../assets/reactNative.png'
-import bootstrap from '../assets/bootstrap-logo-shadow.png'
-import next from '../assets/nextjs.png'
+import redux from "../assets/redux2.png";
+import git from "../assets/git.png";
+import reactNative from "../assets/reactNative.png";
+import bootstrap from "../assets/bootstrap-logo-shadow.png";
+import next from "../assets/nextjs.png";
+import wordpress from "../assets/wordpress.png";
 
 export default function Experience() {
   const techs = [
@@ -86,14 +87,20 @@ export default function Experience() {
       title: "Next",
       style: "shadow-white",
     },
+    {
+      id: 13,
+      src: wordpress,
+      title: "Wordpress",
+      style: "shadow-blue-400",
+    },
   ];
 
   return (
     <div
       name="experience"
-      className="bg-gradient-to-b from-gray-800 to-black w-full h-screen pt-4"
+      className="bg-gradient-to-b from-gray-800 to-black w-full h-screen pt-96 flex flex-col items-center"
     >
-      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white pt-64 ">
+      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white pt-16 pb-16 flex-grow">
         <div>
           <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">
             Experience
@@ -101,7 +108,7 @@ export default function Experience() {
           <p className="py-6">These are the technologies I've worked with.</p>
         </div>
 
-        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center p-8 px-12 sm:px-0 ">
+        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center p-8 px-12 sm:px-0">
           {techs.map(({ id, src, title, style }) => (
             <div
               key={id}
@@ -116,4 +123,3 @@ export default function Experience() {
     </div>
   );
 }
-
