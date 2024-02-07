@@ -25,10 +25,10 @@ const Contact = () => {
   }
 
   return (
-    <div className="w-full h-screen bg-gradient-to-b from-black to-gray-800 pt-60  text-white ">
+    <div className="w-full min-h-full bg-gradient-to-b from-black to-gray-800  text-white ">
       <div
         name="contact"
-        className=" bg-gradient-to-b from-black to-gray-800 pr-4 pl-4"
+        className="  pr-4 pl-4"
       >
         <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full pt-72 ">
           <div className="pb-0">
