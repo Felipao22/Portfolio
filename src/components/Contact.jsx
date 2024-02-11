@@ -30,7 +30,7 @@ const Contact = () => {
   return (
     <div className="w-full min-h-full bg-gradient-to-b from-black to-gray-800  text-white ">
       <div name="contact" className="  pr-4 pl-4">
-        <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full pt-72 ">
+        <div className="flex flex-col p-4 max-w-screen-lg mx-auto h-full pt-48 ">
           <div className="pb-0">
             <p className="text-4xl font-bold inline border-b-4 border-gray-500">
               {t("navbar.contact")}

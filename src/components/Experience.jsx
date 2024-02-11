@@ -104,7 +104,7 @@ export default function Experience() {
       className="bg-gradient-to-b from-gray-800 to-black w-full flex flex-col items-center min-h-full"
       // bg-gradient-to-b from-black to-gray-800 w-full text-white flex flex-col items-center min-h-full
     >
-      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white pt-16 pb-16 flex-grow">
+      <div className="max-w-screen-lg mx-auto p-4 flex flex-col w-full h-full text-white pt-16 pb-16 flex-grow">
         <div>
           <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">
             {t("navbar.experience")}
