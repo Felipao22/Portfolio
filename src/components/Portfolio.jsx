@@ -58,7 +58,7 @@ export default function Portfolio() {
       name="portfolio"
       className="bg-gradient-to-b from-black to-gray-800 w-full text-white flex flex-col items-center min-h-full"
     >
-      <div className="max-w-screen-lg pr-4 pl-4 pb-8 mx-auto flex flex-col w-full flex-grow">
+      <div className="max-w-screen-lg pr-4 pl-4 pb-8 mx-auto flex flex-col w-full flex-grow pt-16">
         <div className="pb-4">
           <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">
             {t("navbar.portfolio")}
