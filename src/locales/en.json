@@ -1,0 +1,28 @@
+{
+    "navbar.home":"Home",
+    "navbar.about":"About",
+    "navbar.portfolio":"Portfolio",
+    "navbar.experience":"Experience",
+    "navbar.contact":"Contact",
+    "navbar.name":"Felipe",
+    "navbar.resumeSpanish":"Resume Spanish",
+    "navbar.resumeEnglish":"Resume",
+    "home.h2":"I'm a Full Stack Developer",
+    "home.p": "Graduated in Henry Bootcamp with +800 hours of programming based on practices and real projects. Currently I love working on web applications using technologies like React, Redux and Node JS and mobile apps using React Native.",
+    "about.iam":"Who am I?",
+    "about.iamtext":"Full Stack Web developer with a passion for creating beautiful, functional, and user-centered digital experiences. With 2 years of experience in the field. I am always looking for innovative ways to bring my clients' visions to life.",
+    "about.me":"Why me?",
+    "about.metext":"Whether I'm working on a website or mobile app, I bring my commitment to design excellence and user-centered thinking to every project I work on. I look forward to the opportunity to bring my skills and passion to your next project.",
+    "portfolio.textwork":"Check out some of my work here.",
+    "portfolio.textproject":"Check out some of my academic projects.",
+    "portfolio.code":"Code",
+    "portfolio.backendcode":"Backend Code",
+    "experience.tech":"These are some of the technologies I work with.",
+    "contact.text":"Submit the form below to get in touch with me.",
+    "contact.text2":"Check to complete all the fields.",
+    "contact.placename":"Enter your name",
+    "contact.placeemail":"Enter your email",
+    "contact.placemessage":"Enter your message",
+    "contact.talk":"Let's talk"
+  }
+  

@@ -4,9 +4,12 @@ import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { BsWhatsapp } from "react-icons/bs";
 import Cv from "../assets/CVFelipeAviani.pdf";
-import Cv2 from '../assets/ResumeFelipeAviani.pdf'
+import Cv2 from "../assets/ResumeFelipeAviani.pdf";
+import { useTranslation } from "react-i18next";
 
 export default function SocialLinks() {
+  const { t } = useTranslation();
+
   const links = [
     {
       id: 1,
@@ -75,22 +78,20 @@ export default function SocialLinks() {
             href={Cv}
             download="CV Felipe Aviani"
           >
-            Resume Spanish <BsFillPersonLinesFill size={30} />
+            {t("navbar.resumeSpanish")} <BsFillPersonLinesFill size={30} />
           </a>
-          
         </li>
         <li
           className={
             "flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300 bg-gray-500"
           }
         >
-
-        <a
+          <a
             className="flex justify-between items-center w-full text-white"
             href={Cv2}
             download="Resume Felipe Aviani"
           >
-            Resume English <BsFillPersonLinesFill size={30} />
+            {t("navbar.resumeEnglish")} <BsFillPersonLinesFill size={30} />
           </a>
         </li>
       </ul>

@@ -1,0 +1,28 @@
+{
+    "navbar.home":"Inicio",
+    "navbar.about":"Sobre Mí",
+    "navbar.portfolio":"Portafolio",
+    "navbar.experience":"Experiencia",
+    "navbar.contact":"Contacto",
+    "navbar.name":"Felipe",
+    "navbar.resumeSpanish":"CV Español",
+    "navbar.resumeEnglish":"CV Inglés",
+    "home.h2":"Soy Desarrollador Full Stack",
+    "home.p":"Graduado en Bootcamp de Henry con +800 horas de programación basadas en prácticas y proyectos reales. Actualmente trabajo en aplicaciones web usando tecnologías como React, Redux y Node JS y apps móviles usando React Native.",
+    "about.iam":"¿Quién soy?",
+    "about.iamtext":"Desarrollador web Full Stack con pasión por crear experiencias digitales, funcionales y centradas en el usuario. Con 2 años de experiencia en el sector. Siempre estoy buscando formas innovadoras de llevar las visiones de mis clientes a la realidad.",
+    "about.me":"¿Por qué a mí?",
+    "about.metext":"Ya sea que esté trabajando en un sitio web o una aplicación móvil, aporto mi compromiso con la excelencia en el diseño y el pensamiento centrado en el usuario a cada proyecto en el que trabajo. Espero tener la oportunidad de aportar mis habilidades y pasión a tú próximo proyecto.",
+    "portfolio.textwork":"Vea algunos de mis trabajos.",
+    "portfolio.textproject":"Vea algunos de mis proyectos académicos.",
+    "portfolio.code":"Código",
+    "portfolio.backendcode":"Código Backend",
+    "experience.tech":"Estas son algunas de las tecnologías con las que trabajo.",
+    "contact.text":"Envíe el siguiente formulario para ponerse en contacto conmigo.",
+    "contact.text2":"Compruebe que ha completado todos los campos.",
+    "contact.placename":"Ingrese su nombre",
+    "contact.placeemail":"Ingrese su mail",
+    "contact.placemessage":"Ingrese su mensaje",
+    "contact.talk":"Hablemos"
+  }
+  

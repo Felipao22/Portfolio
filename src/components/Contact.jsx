@@ -1,6 +1,9 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const { t } = useTranslation();
+
   const [input, setInput] = useState({
     name: "",
     email: "",
@@ -26,19 +29,16 @@ const Contact = () => {
 
   return (
     <div className="w-full min-h-full bg-gradient-to-b from-black to-gray-800  text-white ">
-      <div
-        name="contact"
-        className="  pr-4 pl-4"
-      >
+      <div name="contact" className="  pr-4 pl-4">
         <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full pt-72 ">
           <div className="pb-0">
             <p className="text-4xl font-bold inline border-b-4 border-gray-500">
-              Contact
+              {t("navbar.contact")}
             </p>
             <p className="py-3">
-              Submit the form below to get in touch with me.
+              {t("contact.text")}
               <br />
-              Check to complete all the fields.
+              {t("contact.text2")}
             </p>
           </div>
 
@@ -52,7 +52,7 @@ const Contact = () => {
                 type="text"
                 name="name"
                 value={input.name}
-                placeholder="Enter your name"
+                placeholder={t("contact.placename")}
                 onChange={(e) => handleChange(e)}
                 className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
               />
@@ -60,7 +60,7 @@ const Contact = () => {
                 type="text"
                 name="email"
                 value={input.email}
-                placeholder="Enter your email"
+                placeholder={t("contact.placeemail")}
                 onChange={(e) => handleChange(e)}
                 className="my-4 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
               />
@@ -68,7 +68,7 @@ const Contact = () => {
                 type="text"
                 name="message"
                 value={input.message}
-                placeholder="Enter your message"
+                placeholder={t("contact.placemessage")}
                 onChange={(e) => handleChange(e)}
                 rows="10"
                 className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
@@ -83,7 +83,7 @@ const Contact = () => {
                 onSubmit={(e) => handleSubmit(e)}
                 className="text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 mt-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300"
               >
-                Let's talk
+                {t("contact.talk")}
               </button>
             </form>
           </div>

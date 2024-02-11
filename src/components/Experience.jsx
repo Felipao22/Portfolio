@@ -12,8 +12,11 @@ import reactNative from "../assets/reactNative.png";
 import bootstrap from "../assets/bootstrap-logo-shadow.png";
 import next from "../assets/nextjs.png";
 import wordpress from "../assets/wordpress.png";
+import { useTranslation } from "react-i18next";
 
 export default function Experience() {
+  const { t } = useTranslation();
+
   const techs = [
     {
       id: 1,
@@ -104,9 +107,9 @@ export default function Experience() {
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white pt-16 pb-16 flex-grow">
         <div>
           <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">
-            Experience
+            {t("navbar.experience")}
           </p>
-          <p className="py-6">These are the technologies I've worked with.</p>
+          <p className="py-6">{t("experience.tech")} </p>
         </div>
 
         <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center p-8 px-12 sm:px-0">
