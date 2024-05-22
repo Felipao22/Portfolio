@@ -5,6 +5,8 @@ import quiz from "../assets/portfolio/quizapp.png";
 import proteccion from "../assets/portfolio/proteccion.png";
 import jstrivia from "../assets/portfolio/js.png";
 import gotguides from "../assets/portfolio/gotguides.png";
+import highlands from "../assets/portfolio/highlands.png";
+import brucken from "../assets/portfolio/brucken.png";
 import { useTranslation } from "react-i18next";
 
 export default function Portfolio() {
@@ -23,6 +25,21 @@ export default function Portfolio() {
       src: gotguides,
       href: "https://github.com/Felipao22",
       href2: "https://gotguides.net/",
+    },
+  ];
+
+  const incomingProjects = [
+    {
+      id: 1,
+      src: brucken,
+      href: "https://github.com/Felipao22",
+      href2: "https://bruckencorp.com/",
+    },
+    {
+      id: 2,
+      src: highlands,
+      href: "https://github.com/Felipao22",
+      href2: "https://highlands.tur.ar/",
     },
   ];
 
@@ -72,11 +89,13 @@ export default function Portfolio() {
               key={id}
               className="mb-4 md:mb-0 shadow-md shadow-gray-600 rounded-lg flex flex-col"
             >
-              <img
-                src={src}
-                alt="Don't found"
-                className="rounded-md duration-200 hover:scale-105 flex-grow w-full max-w-full"
-              />
+              <a href={href2} target="_blank" rel="noreferrer">
+                <img
+                  src={src}
+                  alt="Don't found"
+                  className="rounded-md duration-200 hover:scale-105 flex-grow w-full max-w-full"
+                />
+              </a>
               <div className="flex items-center justify-center flex-grow mt-2">
                 <a
                   href={href2}
@@ -109,6 +128,51 @@ export default function Portfolio() {
           ))}
         </div>
 
+        {incomingProjects.length > 0 ? (
+          <>
+            <div className="mt-4">
+              <p className="py-4 text-sm md:text-base">
+                {t("portfolio.textincomingProject")}
+              </p>
+            </div>
+
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-8 px-4 sm:px-0">
+              {incomingProjects.map(({ id, src, href, href2 }) => (
+                <div
+                  key={id}
+                  className="mb-4 md:mb-0 shadow-md shadow-gray-600 rounded-lg flex flex-col"
+                >
+                  <a href={href2} target="_blank" rel="noreferrer">
+                    <img
+                      src={src}
+                      alt="Don't found"
+                      className="rounded-md duration-200 hover:scale-105 flex-grow w-full max-w-full"
+                    />
+                  </a>
+                  <div className="flex items-center justify-center flex-grow mt-2">
+                    <a
+                      href={href2}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="w-full px-4 py-2 m-2 duration-200 hover:scale-105 text-sm md:text-base"
+                    >
+                      Link
+                    </a>
+                    <a
+                      href={href}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="w-full px-4 py-2 m-2 duration-200 hover:scale-105 text-sm md:text-base"
+                    >
+                      {t("portfolio.code")}
+                    </a>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </>
+        ) : null}
+
         <div className="mt-4">
           <p className="py-4 text-sm md:text-base">
             {t("portfolio.textproject")}
@@ -121,11 +185,13 @@ export default function Portfolio() {
               key={id}
               className="mb-4 md:mb-0 shadow-md shadow-gray-600 rounded-lg flex flex-col"
             >
-              <img
-                src={src}
-                alt="Don't found"
-                className="rounded-md duration-200 hover:scale-105 flex-grow w-full max-w-full"
-              />
+              <a href={href2} target="_blank" rel="noreferrer">
+                <img
+                  src={src}
+                  alt="Don't found"
+                  className="rounded-md duration-200 hover:scale-105 flex-grow w-full max-w-full"
+                />
+              </a>
               <div className="flex items-center justify-center flex-grow mt-2">
                 <a
                   href={href2}
